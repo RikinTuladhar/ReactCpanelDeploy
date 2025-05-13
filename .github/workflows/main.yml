@@ -31,4 +31,4 @@ jobs:
           ftp-server: ftp.rikintuladhar.com.np
           ftp-username: rikin
           ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build/
+          local-dir: dist/
