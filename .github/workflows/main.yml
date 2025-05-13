@@ -28,7 +28,7 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-        server: ftp.rikintuladhar.com.np
-        username: rikin
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist/
+          server: ftp.rikintuladhar.com.np
+          username: rikin
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/
