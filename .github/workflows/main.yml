@@ -26,9 +26,10 @@ jobs:
         run: npm run build
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
-        server: ftp.rikintuladhar.com.np
-        username: rikin
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist/
+          ftp-server: ftp.rikintuladhar.com.np
+          ftp-username: rikin
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/
+          git-ftp-args: "--no-push"
